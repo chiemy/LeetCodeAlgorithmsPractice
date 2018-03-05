@@ -7,16 +7,6 @@
  * Otherwise, the NOT null node will be used as the node of new tree.
  */
 public class MergeTwoBinaryTrees {
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
-
     public static TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
 
         return solution2(t1, t2);
