@@ -1,5 +1,13 @@
 public class MoveZeroes {
     public void moveZeroes(int[] nums) {
+        solution1(nums);
+
+        for (int i = 0; i < size; i++) {
+            System.out.print(nums[i] + " ");
+        }
+    }
+
+    private void solution1(int[] nums) {
         int size = nums.length;
         int index = 0;
         for (int i = 0 ; i < size ; index++,i++) {
@@ -17,6 +25,23 @@ public class MoveZeroes {
         }
         for (int i = index; i < size; i++) {
             nums[i] = 0;
+        }
+
+        for (int i = 0; i < size; i++) {
+            System.out.print(nums[i] + " ");
+        }
+    }
+
+    private void solution2(int[] nums) {
+        int size = nums.length;
+        int index = 0;
+        for (int i = 0 ; i < size ; i++) {
+            if(nums[i] != 0) {
+                int temp = nums[index];
+                nums[index] = nums[i];
+                nums[i] = temp;
+                index++;
+            }
         }
 
         for (int i = 0; i < size; i++) {
