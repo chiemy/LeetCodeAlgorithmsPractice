@@ -1,10 +1,6 @@
 public class MoveZeroes {
     public void moveZeroes(int[] nums) {
         solution1(nums);
-
-        for (int i = 0; i < size; i++) {
-            System.out.print(nums[i] + " ");
-        }
     }
 
     private void solution1(int[] nums) {
